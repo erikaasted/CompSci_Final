@@ -5,7 +5,7 @@ import javax.swing.border.*;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.*;
-import javax.imageio.*
+import javax.imageio.*;
 
 public class Board
 {
@@ -59,8 +59,8 @@ public class Board
 
 
 
-                ImageIcon icon = new ImageIcon(new BufferedImage())
-                b.setIcon(icon);
+//                ImageIcon icon = new ImageIcon(new BufferedImage())
+//                b.setIcon(icon);
                 if ((j % 2 == 1 && i % 2 == 1) || (j % 2 == 0 && i % 2 == 0))
                 {
                     b.setBackground(Color.WHITE);
