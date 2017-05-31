@@ -1,11 +1,13 @@
 public abstract class ChessPiece
 {
-    int[][] location;
-    String type;
+    int row, col;
+    String color;
 
-    ChessPiece(int[] location, String type)
+    ChessPiece(String col, int row, String color)
     {
-
+        this.col = Integer.parseInt(col);
+        this.row = row;
+        this.color = color;
     }
 
     public abstract void move();
