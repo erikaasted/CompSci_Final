@@ -785,7 +785,7 @@ public class Main extends JFrame implements MouseListener
 					}
 				else
 					return;
-					
+
 				det.removeAll();
 				det.add(new JLabel(" "+n));
 				det.add(new JLabel(" 0"));

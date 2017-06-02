@@ -2,40 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f123a17-b976-4b8f-be56-ceaa055c9bde" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/Cell.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/GUI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/Player.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/Time.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/pieces/Bishop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/pieces/King.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/pieces/Knight.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/pieces/Pawn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/pieces/Piece.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/pieces/Queen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chess/pieces/Rook.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/Black_Bishop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/Black_King.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/Black_Knight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/Black_Pawn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/Black_Queen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/Black_Rook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/White_Bishop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/White_King.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/White_Knight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/White_Pawn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/White_Queen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chess_Pieces/White_Rook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CompSci_Final/Board$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CompSci_Final/Board.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CompSci_Final/ChessPiece.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CompSci_Final/Pawn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Board.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ChessPiece.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Pawn.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chessgamedata.dat" afterPath="$PROJECT_DIR$/chessgamedata.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CompSci_Final/chess/assets/black_king.png" afterPath="$PROJECT_DIR$/out/production/CompSci_Final/chess/assets/black_king.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CompSci_Final/chess/assets/black_queen.png" afterPath="$PROJECT_DIR$/out/production/CompSci_Final/chess/assets/black_queen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CompSci_Final/chess/assets/white_king.png" afterPath="$PROJECT_DIR$/out/production/CompSci_Final/chess/assets/white_king.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chess/assets/black_king.png" afterPath="$PROJECT_DIR$/src/chess/assets/black_king.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chess/assets/black_queen.png" afterPath="$PROJECT_DIR$/src/chess/assets/black_queen.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chess/Main.java" afterPath="$PROJECT_DIR$/src/chess/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/chess/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="10965">
-              <caret line="787" column="20" lean-forward="false" selection-start-line="787" selection-start-column="20" selection-end-line="787" selection-end-column="20" />
+              <caret line="787" column="0" lean-forward="false" selection-start-line="787" selection-start-column="0" selection-end-line="787" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1096#1102#0" expanded="true" />
@@ -304,6 +278,116 @@
       <recent name="$PROJECT_DIR$/src/chess/pieces" />
       <recent name="$PROJECT_DIR$/src/Chess/assets" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/chess/assets/white_king.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration default="false" name="Board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -795,7 +879,7 @@
       <updated>1495810766996</updated>
       <workItem from="1495810769757" duration="11698000" />
       <workItem from="1496252520081" duration="437000" />
-      <workItem from="1496253110815" duration="19203000" />
+      <workItem from="1496253110815" duration="19680000" />
     </task>
     <task id="LOCAL-00001" summary="made some classes, eh">
       <created>1495811277972</created>
@@ -815,7 +899,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31338000" />
+    <option name="totallyTimeSpent" value="31815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -828,7 +912,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -839,7 +923,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282532" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24384525" sideWeight="0.5028612" order="9" side_tool="false" content_ui="tabs" x="14" y="679" width="325" height="194" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
@@ -1058,14 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chess/pieces/Rook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="72" lean-forward="false" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chess/pieces/Pawn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1101,10 +1177,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/chess/pieces/Rook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="72" lean-forward="false" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/chess/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10965">
-          <caret line="787" column="20" lean-forward="false" selection-start-line="787" selection-start-column="20" selection-end-line="787" selection-end-column="20" />
+          <caret line="787" column="0" lean-forward="false" selection-start-line="787" selection-start-column="0" selection-end-line="787" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1096#1102#0" expanded="true" />
