@@ -5,8 +5,6 @@ import chess.pieces.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,11 +19,10 @@ import java.util.ListIterator;
 
 public class Main extends JFrame implements MouseListener
 {
-	private static final long serialVersionUID = 1L;
+//	private static final long serialVersionUID = 1L;
 
 	//Variable Declaration
-	private static final int Height=700;
-	private static final int Width=1110;
+	private static final int height = 700, width = 1110;
 	private static Rook wr01, wr02, br01, br02;
 	private static Knight wk01,wk02,bk01,bk02;
 	private static Bishop wb01,wb02,bb01,bb02;
@@ -42,11 +39,11 @@ public class Main extends JFrame implements MouseListener
 	private JPanel bdetails=new JPanel(new GridLayout(3,3));
 	private JPanel wcombopanel=new JPanel();
 	private JPanel bcombopanel=new JPanel();
-	private JPanel controlPanel,WhitePlayer,BlackPlayer,temp,displayTime,showPlayer,time;
+	private JPanel controlPanel, WhitePlayer, BlackPlayer, temp, displayTime, showPlayer, time;
 	private JSplitPane split;
 	private JLabel label,mov;
 	private static JLabel CHNC;
-	private Time timer;
+//	private Time timer;
 	public static Main Mainboard;
 	private boolean selected=false,end=false;
 	private Container content;
@@ -57,14 +54,14 @@ public class Main extends JFrame implements MouseListener
 	private String wname=null,bname=null,winner=null;
 	static String move;
 	private Player tempPlayer;
-	private JScrollPane wscroll,bscroll;
-	private String[] WNames={},BNames={};
-	private JSlider timeSlider;
+	private JScrollPane wscroll, bscroll;
+	private String[] WNames = {}, BNames = {};
+//	private JSlider timeSlider;
 	private BufferedImage image;
-	private Button start,wselect,bselect,WNewPlayer,BNewPlayer;
-	public static int timeRemaining=60;
-	public static void main(String[] args){
-
+	private Button start, wselect, bselect, WNewPlayer, BNewPlayer;
+//	public static int timeRemaining=60;
+	public static void main(String[] args)
+	{
 		//variable initialization
 	wr01 = new Rook("WR01","assets/white_rook.png",0);
 	wr02 = new Rook("WR02","assets/white_rook.png",0);
@@ -100,8 +97,8 @@ public class Main extends JFrame implements MouseListener
 	//Constructor
 	private Main()
 	{
-		timeRemaining = 60;
-		timeSlider = new JSlider();
+//		timeRemaining = 60;
+//		timeSlider = new JSlider();
 		move = "White";
 		wname = null;
 		bname = null;
@@ -117,14 +114,14 @@ public class Main extends JFrame implements MouseListener
 //		ImageIcon img = new ImageIcon(this.getClass().getResource("icon.png"));
 //		this.setIconImage(img.getImage());
 
-		//Time Slider Details
-		timeSlider.setMinimum(1);
-		timeSlider.setMaximum(15);
-		timeSlider.setValue(1);
-		timeSlider.setMajorTickSpacing(2);
-		timeSlider.setPaintLabels(true);
-		timeSlider.setPaintTicks(true);
-		timeSlider.addChangeListener(new TimeChange());
+//		//Time Slider Details
+//		timeSlider.setMinimum(1);
+//		timeSlider.setMaximum(15);
+//		timeSlider.setValue(1);
+//		timeSlider.setMajorTickSpacing(2);
+//		timeSlider.setPaintLabels(true);
+//		timeSlider.setPaintTicks(true);
+//		timeSlider.addChangeListener(new TimeChange());
 
 
 		//Fetching Details of all Players
@@ -144,7 +141,7 @@ public class Main extends JFrame implements MouseListener
 		board.setBorder(BorderFactory.createLoweredBevelBorder());
 		chess.pieces.Piece P;
 		content = getContentPane();
-		setSize(Width, Height);
+		setSize(width, height);
 		setTitle("Chess");
 		content.setBackground(Color.black);
 		controlPanel = new JPanel();
@@ -246,38 +243,38 @@ public class Main extends JFrame implements MouseListener
 		}
 
 		showPlayer=new JPanel(new FlowLayout());
-		showPlayer.add(timeSlider);
-		JLabel setTime=new JLabel("Set Timer(in mins):");
+//		showPlayer.add(timeSlider);
+//		JLabel setTime=new JLabel("Set Timer(in mins):");
 		start=new Button("Start");
 		start.setBackground(Color.black);
 		start.setForeground(Color.white);
 	    start.addActionListener(new START());
 		start.setPreferredSize(new Dimension(120,40));
-		setTime.setFont(new Font("Arial",Font.BOLD,16));
+//		setTime.setFont(new Font("Arial",Font.BOLD,16));
 		label = new JLabel("Time Starts now", JLabel.CENTER);
-		  label.setFont(new Font("SERIF", Font.BOLD, 30));
-	      displayTime=new JPanel(new FlowLayout());
-	      time=new JPanel(new GridLayout(3,3));
-	      time.add(setTime);
-	      time.add(showPlayer);
-	      displayTime.add(start);
-	      time.add(displayTime);
-	      controlPanel.add(time);
+		label.setFont(new Font("SERIF", Font.BOLD, 30));
+//	      displayTime=new JPanel(new FlowLayout());
+//	      time=new JPanel(new GridLayout(3,3));
+//	      time.add(setTime);
+//	      time.add(showPlayer);
+//	      displayTime.add(start);
+//	      time.add(displayTime);
+//	      controlPanel.add(time);
 		board.setMinimumSize(new Dimension(800,700));
 
 		//The Left Layout When Game is inactive
-		temp=new JPanel()
+		temp = new JPanel()
 		{
 			private static final long serialVersionUID = 1L;
 
-			@Override
 		    public void paintComponent(Graphics g)
 			{
 				  try
 				  {
 			          image = ImageIO.read(this.getClass().getResource("assets/clash.jpg"));
 				  }
-			       catch (IOException ex)
+
+				  catch (IOException ex)
 				  {
 			            System.out.println("not found");
 				  }
@@ -300,27 +297,27 @@ public class Main extends JFrame implements MouseListener
 	{
 		if (boardState[getKing(chance).getx()][getKing(chance).gety()].isCheck())
 		{
-			chance^=1;
-			gameend();
+			chance ^= 1;
+			gameEnd();
 		}
-		if(destinationlist.isEmpty()==false)
+		if(!destinationlist.isEmpty())
 			cleandestinations(destinationlist);
 		if(previous!=null)
 			previous.deselect();
 		previous=null;
 		chance^=1;
-		if(!end && timer!=null)
-		{
-			timer.reset();
-			timer.start();
-			showPlayer.remove(CHNC);
-			if(Main.move=="White")
-				Main.move="Black";
-			else
-				Main.move="White";
-			CHNC.setText(Main.move);
-			showPlayer.add(CHNC);
-		}
+//		if(!end && timer!=null)
+//		{
+//			timer.reset();
+//			timer.start();
+//			showPlayer.remove(CHNC);
+//			if(Main.move=="White")
+//				Main.move="Black";
+//			else
+//				Main.move="White";
+//			CHNC.setText(Main.move);
+//			showPlayer.add(CHNC);
+//		}
 	}
 
 	//A function to retrieve the Black King or White King
@@ -461,11 +458,11 @@ public class Main extends JFrame implements MouseListener
 
 
     @SuppressWarnings("deprecation")
-	private void gameend()
+	private void gameEnd()
     {
     	cleandestinations(destinationlist);
-    	displayTime.disable();
-    	timer.countdownTimer.stop();
+//    	displayTime.disable();
+//    	timer.countdownTimer.stop();
     	if(previous!=null)
     		previous.removePiece();
     	if(chance==0)
@@ -482,13 +479,13 @@ public class Main extends JFrame implements MouseListener
 		JOptionPane.showMessageDialog(board,"Checkmate!!!\n"+winner+" wins");
 		WhitePlayer.remove(wdetails);
 		BlackPlayer.remove(bdetails);
-		displayTime.remove(label);
+//		displayTime.remove(label);
 
-		displayTime.add(start);
+//		displayTime.add(start);
 		showPlayer.remove(mov);
 		showPlayer.remove(CHNC);
 		showPlayer.revalidate();
-		showPlayer.add(timeSlider);
+//		showPlayer.add(timeSlider);
 
 		split.remove(board);
 		split.add(temp);
@@ -559,7 +556,7 @@ public class Main extends JFrame implements MouseListener
 							previous.deselect();
 							if(previous.getPiece()!=null)
 								previous.removePiece();
-							gameend();
+							gameEnd();
 						}
 					}
 					if(getKing(chance).isindanger(boardState)==false)
@@ -572,8 +569,8 @@ public class Main extends JFrame implements MouseListener
 					changeChance();
 					if(!end)
 					{
-						timer.reset();
-						timer.start();
+//						timer.reset();
+//						timer.start();
 					}
 				}
 				if(previous!=null)
@@ -651,7 +648,7 @@ public class Main extends JFrame implements MouseListener
 			bselect.disable();
 			split.remove(temp);
 			split.add(board);
-			showPlayer.remove(timeSlider);
+//			showPlayer.remove(timeSlider);
 			mov=new JLabel("Move:");
 			mov.setFont(new Font("Comic Sans MS",Font.PLAIN,20));
 			mov.setForeground(Color.red);
@@ -660,20 +657,20 @@ public class Main extends JFrame implements MouseListener
 			CHNC.setFont(new Font("Comic Sans MS",Font.BOLD,20));
 			CHNC.setForeground(Color.blue);
 			showPlayer.add(CHNC);
-			displayTime.remove(start);
-			displayTime.add(label);
-			timer=new Time(label);
-			timer.start();
+//			displayTime.remove(start);
+//			displayTime.add(label);
+//			timer=new Time(label);
+//			timer.start();
 		}
 	}
 
-	class TimeChange implements ChangeListener
-	{
-		public void stateChanged(ChangeEvent arg0)
-		{
-			timeRemaining=timeSlider.getValue()*60;
-		}
-	}
+//	class TimeChange implements ChangeListener
+//	{
+//		public void stateChanged(ChangeEvent arg0)
+//		{
+//			timeRemaining=timeSlider.getValue()*60;
+//		}
+//	}
 
 
 	class SelectHandler implements ActionListener
