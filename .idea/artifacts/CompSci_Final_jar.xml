@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CompSci_Final:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CompSci_Final_jar</output-path>
+    <root id="archive" name="CompSci_Final.jar">
+      <element id="module-output" name="CompSci_Final" />
+    </root>
+  </artifact>
+</component>
